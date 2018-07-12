@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Night Out</title>
+        
+        <link rel="shortcut icon" type="img/jpeg" href="assets/images/night_out.png">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/gijgo.min.js" type="text/javascript"></script>
+        <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Knewave|Permanent+Marker" rel="stylesheet">
+        <script type="text/javascript" src="assets/javascript/logic.js"></script>
+   
+</head>
+<body class="bg">
+        <div id="header">
+            
+            <div class="row align-items-center text-justify">
+                <div class="col-lg-6" id="title">
+                    <h1 id="night">Night</h1>
+                    <h1 id="out">Out</h1>
+                </div>
+            <div class="col-lg-6" id="sidebar">
+                    <h3>Striving to provide customers with the best available entertainment options for a "Night Out" on the town.</h3>
+                </div>
+            </div>
+            <!--<figure>
+                <img src="assets/images/skyline-01-new-york-city.jpg">
+                <img src="assets/images/chicago-skyline-at-night-1476869530gRz.jpg">
+                <img src="assets/images/Philadelphia Skyline.jpg">
+            </figure>-->
+        </div>
+
+        <div class="container" id="forms">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <!-- <label for="InputCity">City</label> -->
+                        <input type="city" class="form-control" id="city-input" placeholder="City" required>
+                    </div>
+                </div>  
+                
+                <div class="col-lg-6">
+                    <div class="form-group">
+                            <!-- <label for="InputState">State</label> -->
+                            <input type="state" class="form-control" id="state-input" placeholder="State" required>
+                    </div>
+            </div>
+            </div>
+            
+            <div class="row">
+                <div class='col-lg-6'>
+                        <div class="form-group">
+                        <input id="startDate-input" placeholder="Start Date" required>
+                        </div>
+                </div>
+
+                <div class='col-lg-6'>
+                        <div class="form-group">
+                        <input id="endDate-input" placeholder="End Date" required/>
+                        </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p id="red">Please fill out all fields</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <button type="submit" id="submit-form">Submit</button>
+                    <button type="submit" id="last-search">Last Search</button>
+                </div>
+                <br>
+                <div class="col-lg-6">
+                    <button type="reset" id="reset">Clear</button>
+                </div>
+            </div>
+            <br>
+
+
+            <div class="row">
+                <h2 class="display-4 text-light"><u id="title-event"></u></h2>
+                <div class="col-lg-12" id="event-view"></div>
+            </div>
+            <br>
+            <div class="row">
+                <h2 class="display-4 text-light"><u id="title-restaurant"></u></h2>
+                <div class="col-lg-12" id="restaurant-view"></div>
+            </div>
+            <br>
+            <div class="row">
+                <h2 class="display-4 text-light"><u id="title-hotel"></u></h2>   
+                <div class="col-lg-12" id="hotel-view"></div>
+            </div>   
+             
+        </div>
+        
+        <div class="footer">
+            <small>&copy; Copyright, Group Awsome</small>
+        </div>
+
+</body>
+</html>
